@@ -1,9 +1,9 @@
 /* 
  Travail pratique 1
- Nom de la première personne
- --> Nom de la deuxième personne
  
- Date  JJ-MM-AAAA                                             
+ Simon Bergeron-Girard
+ 
+ Date  01-07-2021                                             
 */
 -- DROP DATABASE IF EXISTS PosteClientDFC;
 -- CREATE DATABASE IF NOT EXISTS PosteClientDFC;

@@ -1,9 +1,9 @@
 /* 
  Travail pratique 1
+ Jonathan Audet
+ --> Simon Bergeron-Girard
  
- Simon Bergeron-Girard
- 
- Date  01-07-2021                                             
+ Date  02-07-2021                                             
 */
 -- DROP DATABASE IF EXISTS PosteClientDFC;
 -- CREATE DATABASE IF NOT EXISTS PosteClientDFC;

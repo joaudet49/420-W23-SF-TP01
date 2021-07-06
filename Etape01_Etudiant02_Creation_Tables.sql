@@ -17,7 +17,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS logiciel;
 CREATE TABLE logiciel (
 id_logiciel INT PRIMARY KEY,
-nom_logiciel VARCHAR(45) NOT NULL,
+nom_logiciel VARCHAR(45),
 nb_licence INT,
 id_editeur INT NOT NULL,
 FOREIGN KEY (id_editeur) REFERENCES editeur(id_editeur)
@@ -26,7 +26,7 @@ FOREIGN KEY (id_editeur) REFERENCES editeur(id_editeur)
 DROP TABLE IF EXISTS editeur;
 CREATE TABLE editeur (
 id_editeur INT PRIMARY KEY,
-nom_editeur VARCHAR(45) NOT NULL
+nom_editeur VARCHAR(45)
 )ENGINE=InnoDB;
 
 DROP TABLE IF EXISTS poste_has_logiciel;
@@ -45,7 +45,7 @@ nom_usager VARCHAR(45) NOT NULL,
 prenom_usager VARCHAR(45) NOT NULL,
 telephone_usager VARCHAR(45),
 local_id_local INT,
-FOREIGN KEY (local_id_local) REFERENCES usager_has_poste(id_poste)
+FOREIGN KEY (local_id_local) REFERENCES local(id_local)
 )ENGINE=InnoDB;
 
 DROP TABLE IF EXISTS usager_has_poste;
@@ -57,3 +57,4 @@ CONSTRAINT fk_usager_has_poste_id_usager FOREIGN KEY (id_usager) REFERENCES usag
 CONSTRAINT fk_usager_has_poste_id_poste FOREIGN KEY (id_poste) REFERENCES poste(id_poste)
 )ENGINE=InnoDB;
 
+SET FOREIGN_KEY_CHECKS = 1;

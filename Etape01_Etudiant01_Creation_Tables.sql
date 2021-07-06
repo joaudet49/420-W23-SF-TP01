@@ -20,7 +20,9 @@ desc_poste VARCHAR(45),
 desc_processeur VARCHAR(45),
 nb_ram_mo VARCHAR(45),
 tail_disque_giga INT,
-FOREIGN KEY (id_fabricant) REFERENCES peripherique(id_fabricant),
+id_fabricant INT,
+id_local INT,
+FOREIGN KEY (id_fabricant) REFERENCES fabricant(id_fabricant),
 FOREIGN KEY (id_local) REFERENCES local(id_local)
 )ENGINE=InnoDB;
 
@@ -34,6 +36,8 @@ DROP TABLE IF EXISTS peripherique;
 CREATE TABLE peripherique (
 id_peripherique INT PRIMARY KEY,
 nom_peripherique VARCHAR(45) NOT NULL,
+id_poste INT,
+id_fabricant INT,
 FOREIGN KEY (id_poste) REFERENCES poste(id_poste),
 FOREIGN KEY (id_fabricant) REFERENCES fabricant(id_fabricant)
 )ENGINE=InnoDB;

@@ -57,4 +57,3 @@ CONSTRAINT fk_usager_has_poste_id_usager FOREIGN KEY (id_usager) REFERENCES usag
 CONSTRAINT fk_usager_has_poste_id_poste FOREIGN KEY (id_poste) REFERENCES poste(id_poste)
 )ENGINE=InnoDB;
 
-SET FOREIGN_KEY_CHECKS = 1;

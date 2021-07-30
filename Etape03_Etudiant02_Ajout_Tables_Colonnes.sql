@@ -20,7 +20,8 @@ INSERT INTO typeusager
 VALUES (1,'Professeur'),(2,'Employé'),(3,'Étudiant');
 
 ALTER TABLE usager
-ADD COLUMN id_Type_usager INTEGER null;
+ADD COLUMN id_Type_usager INTEGER null,
+ADD FOREIGN KEY (id_Type_usager) REFERENCES typeusager(id_typeusager);
 
 ALTER TABLE logiciel
 ADD CONSTRAINT nom_logiciel_unique UNIQUE (nom_logiciel);

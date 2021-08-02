@@ -32,6 +32,8 @@ SET
     imprimante = 679
 WHERE nom_local = 'P-418';
 
+SET SQL_SAFE_UPDATES = 0;
+
 UPDATE peripherique
 SET id_type_peripherique = 1
 WHERE nom_peripherique LIKE 'Imprimante%';
@@ -47,3 +49,5 @@ WHERE nom_peripherique LIKE 'Clavier%';
 UPDATE peripherique
 SET id_type_peripherique = 4
 WHERE nom_peripherique LIKE 'Écran%';
+
+SET SQL_SAFE_UPDATES = 1;

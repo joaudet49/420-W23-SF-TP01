@@ -1,7 +1,7 @@
 /* 
  Travail pratique 1
- --> Nom de la première personne
- Nom de la deuxième personne
+ --> Jonathan Audet
+  Simon Bergeron-Girard
  
  Date  JJ-MM-AAAA                                             
 */

@@ -1,7 +1,7 @@
 /* 
 Travail pratique 1
- Jonathan Audet
- --> Simon Bergeron-Girard
+ --> Jonathan Audet
+  Simon Bergeron-Girard
  
  Date  06-07-2021                                             
 */

@@ -26,7 +26,8 @@ ADD FOREIGN KEY (id_type_peripherique) REFERENCES typeperipherique(id_typeperiph
 ALTER TABLE local
 ADD COLUMN nb_bureau VARCHAR(45),
 ADD COLUMN nb_prise_ethernet VARCHAR(45),
-ADD COLUMN imprimante INT;
+ADD COLUMN imprimante INT,
+ADD FOREIGN KEY (imprimante) REFERENCES peripherique(id_peripherique);
 
 ALTER TABLE local
 ADD CONSTRAINT nom_local_unique UNIQUE (nom_local);
